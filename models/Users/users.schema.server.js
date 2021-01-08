@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
         required: [true, "Please check your data entry, no gender specified!"]
     },
     role: {
-        role: String,
+        type: String,
         enum: ['ADMIN', 'ACTIVE_INVESTOR', 'PASSIVE_INVESTOR'],
     }
 }, {collection:'users'})
