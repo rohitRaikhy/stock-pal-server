@@ -21,8 +21,7 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['ADMIN', 'ACTIVE_INVESTOR', 'PASSIVE_INVESTOR'],
-    }
+        enum: ['ADMIN', 'ACTIVE_INVESTOR', 'PASSIVE_INVESTOR']},
 }, {collection:'users'})
 
 module.exports = userSchema
