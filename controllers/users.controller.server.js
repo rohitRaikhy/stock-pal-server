@@ -11,7 +11,7 @@ module.exports = function (app) {
 
     app.post('/api/users', (req, res) =>
     // usersService.createUser(req.body.user)
-        usersService.createUser("test", "email", "password", "gender", "role")
+        usersService.createUser("test", "email", "password", "gender", "ADMIN")
         .then(actualUser => res.send(actualUser)))
 }
 
